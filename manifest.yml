@@ -1,10 +1,9 @@
 applications:
-- name: myapp-v3
+- name: myapp
+  memory: 128mb
   disk_quota: 1G
   instances: 1
-  memory: 512mb
-  buildpack: https://github.com/cloudfoundry/staticfile-buildpack
-  path: dist/myapp
+  buildpack: nodejs_buildpack
   routes:
   - route: myapp-aae.apps.pcfone.io
   stack: cflinuxfs2
