@@ -1,6 +1,6 @@
 {
     "/api": {
-        "target": "http://apiserver-aae.apps.pcfone.io:3000",
+        "target": "http://apiserver-aae.apps.pcfone.io",
         "secure": true,
         "changeOrigin": true
     }
