@@ -1,23 +1,50 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>
-    Welcome to {{ title }}!
+    Listing contacts
   </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
 </div>
-<h2>Here are some links to help you start: </h2>
 
-<h3><a href="/api/food">Call Food endpoint</a></h3>
 
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<!-- <div class="container">
+<div class="card">
+  <ng-container *ngFor="let contact of data.contacts">
+    <div class="contact-details card-body">
+    <h2>{{contact.name}}</h2>
+    <h1>{{contact.location}}</h1>
+    <h3>{{contact.role}}</h3>
+    <h4>{{contact.company}}</h4>
+    <p>{{contact.info}}</p>
+    <h4>{{contact.email}}</h4>
+    <h4>{{contact.twitter}}</h4>
+  </div>
+  </ng-container>
+</div>
+</div> -->
 
+<div class="container">
+<table class="table">
+  <thead>
+      <th scope="col">Name</th>
+      <th scope="col">Location</th>
+      <th scope="col">Role</th>
+      <th scope="col">Company</th>
+      <th scope="col">Info</th>
+      <th scope="col">Email</th>
+      <th scope="col">Twitter</th>
+  </thead>
+  <tbody>
+  <ng-container *ngFor="let contact of data.contacts">
+    <tr>
+      <th scope="row">{{contact.name}}</th>
+      <th>{{contact.location}}</th>
+      <th>{{contact.role}}</th>
+      <th>{{contact.company}}</th>
+      <th>{{contact.info}}</th>
+      <th>{{contact.email}}</th>
+      <th>{{contact.twitter}}</th>
+    </tr>
+  </ng-container>
+  </tbody>
+</table>
+</div>

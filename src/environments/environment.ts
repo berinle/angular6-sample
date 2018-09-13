@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  addressBookApiBaseUrl: "https://address-book-demo.herokuapp.com",
+  foodBookApiBaseUrl: "https://apiserver-aae.apps.pcfone.io",
 };
 
 /*
